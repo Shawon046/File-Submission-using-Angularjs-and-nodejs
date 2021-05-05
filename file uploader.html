@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Demo of file upload</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="file uploader.js"></script>
+</head>
+
+<body>
+  <h1 class="text-center">File Upload</h1>
+  <div ng-app="uploadApp">
+    <div ng-controller='uploadCtrl'>
+      <input type = "file" file-model = "myFile"/>
+      <button ng-click = "uploadFile()">upload me</button>
+    </div>
+  </div>
+</body>
+
+
+
+
+</html>
