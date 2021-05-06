@@ -3,10 +3,10 @@ const path = require('path');
 
 
 const app = express();
-app.use('/static', express.static('styling and scripts'))
+app.use('/static', express.static('final mini moodle'))
 
 app.get('/',function(req, res) {
-    res.sendFile(path.join(__dirname,'/digital clock.html'))
+    res.sendFile(path.join(__dirname,'final mini moodle/mini moodle.html'))
 });
 
 app.listen(8080);
