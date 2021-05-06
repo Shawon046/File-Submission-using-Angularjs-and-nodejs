@@ -4,36 +4,24 @@
 <head>
   <meta charset="utf-8" />
   <title>Demo of file upload</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-  <script src="file uploader.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="/static/file uploader.js"></script>
 </head>
 
 <body>
+
   <h1 class="text-center">File Upload</h1>
   <div ng-app="uploadApp">
     <div ng-controller='uploadCtrl'>
-      <input type = "file" file-model = "myFile"/>
-      <button ng-click = "uploadFile()">upload me</button>
+      <!-- <input type = "file" file-model = "myFile"/> -->
+      <input type="file"
+        onchange="angular.element(this).scope().setFile(this)">
+      {{theFile.name}}
+      {{FileMessage}}
+      <!-- <button ng-click = "uploadFile()">upload me</button> -->
       
     </div>
-
-    <!-- <input type="file" select-ng-files ng-model="fileArray" multiple>
-
-    <code><table ng-show="fileArray.length">
-    <tr><td>Name</td><td>Date</td><td>Size</td><td>Type</td><tr>
-    <tr ng-repeat="file in fileArray">
-      <td>{{file.name}}</td>
-      <td>{{file.lastModified | date  : 'MMMdd,yyyy'}}</td>
-      <td>{{file.size}}</td>
-      <td>{{file.type}}</td>
-    </tr>
-    </table></code> -->
-
-    <!-- <form name='fileForm' >
-      <input type="file" name="file" ng-model="fileForm.file" validfile>
-    </form> -->
-
-    
   </div>
+
 </body>
 </html>
