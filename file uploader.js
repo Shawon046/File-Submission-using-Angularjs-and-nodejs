@@ -17,7 +17,7 @@ myApp.controller('uploadCtrl', function($scope) {
             }
             else {
                 $scope.theFile = '';
-                    $scope.FileMessage = 'please upload correct File Name, File extension should be in fixed format';
+                    $scope.FileMessage = 'please upload correct File. File extension should be in fixed format';
             }
 
         });
