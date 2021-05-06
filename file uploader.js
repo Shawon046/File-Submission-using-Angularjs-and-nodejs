@@ -1,7 +1,7 @@
 var myApp = angular.module('uploadApp', []);
 
 myApp.controller('uploadCtrl', function($scope) {
-    const validFormats = ['txt','doc','png'];
+    var validFormats = ['txt','doc','png'];
     $scope.setFile = function(element) {
         $scope.$apply(function($scope) {
             $scope.theFile = element.files[0];
@@ -9,8 +9,9 @@ myApp.controller('uploadCtrl', function($scope) {
             var filename = $scope.theFile.name;
             console.log(filename.length)
             var index = filename.lastIndexOf(".");
-            var file_extension = filename.substring(index, filename.length);
-            if (validFormats.indexOf(file_extension) == -1)
+            var file_extension = filename.substring(index+1, filename.length);
+            console.log(file_extension)
+            if (validFormats.indexOf(file_extension) != -1)
             {
                 console.log('File Uploaded sucessfully');
             }
