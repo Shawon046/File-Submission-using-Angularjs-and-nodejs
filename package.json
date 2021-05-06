@@ -1,0 +1,22 @@
+{
+  "name": "file-submission-using-angularjs-and-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ang.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shawon046/File-Submission-using-Angularjs-and-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shawon046/File-Submission-using-Angularjs-and-nodejs/issues"
+  },
+  "homepage": "https://github.com/Shawon046/File-Submission-using-Angularjs-and-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
